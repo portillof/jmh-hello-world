@@ -1,0 +1,21 @@
+# Task
+
+I need to quickly prepare a presentation around JMH the microprofiling tool for Java. 
+
+The presentation is in 1 hour from now, and it takes 30mins usually. We can make it shorter.
+
+Here's what you're going to do, in this repo:
+
+
+- Initialize a .git repository
+- Initialize a basic maven project, adding JMH as a dependency
+- Write a README.md file: 
+ - Explaining quickly what the project is about and the basics of JMH and what microprofiling is about
+ - Explaining how to use it in a CI/CD environment
+ - Example of quick runs, how to run the project
+ - Example of a report if natively available via JMH or a JUnit pluging, otherwise, skip
+- Some sources for inspiration: https://www.baeldung.com/java-microbenchmark-harness and https://nitin-karthy.medium.com/learning-jmh-part-1-the-setup-45e819fddae4
+- Write some "hello world" test cases, I'd like to explore, if that's still valid in most modern versions of java, things like:
+ - Autoboxing overhead, a method using Long instead of long, microprofile both and check differences in throughput (used to be a thing, at least until Java 8)
+ - A method that's optimized vs a method that is not optimized, against the same sample input, e.g.; sorting a 100 size list/array with bubble sort vs native Collections sorting in Java, just to illustrate (no one should be writing sorting code today) 
+
